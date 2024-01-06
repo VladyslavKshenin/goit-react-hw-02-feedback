@@ -36,7 +36,7 @@ export class App extends Component {
                 <GlobalStyles/>
                 <Section title="Please leave feedback">
                     <FeedbackOptions
-                        options={['good', 'neutral', 'bad']}
+                        options = {Object.keys(this.state)}
                         onLeaveFeedback={this.heandlerClick}
                     />
                 </Section>
